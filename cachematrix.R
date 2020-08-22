@@ -33,8 +33,6 @@ makeCacheMatrix <- function(x = matrix())
           getInverseMatrix = getInverseMatrix)
 }
 
-## Write a short comment describing this function
-
 cacheSolve <- function(x, ...) 
 {
      # Computes the inverse of the special "matrix" returned by makeCacheMatrix above. 
@@ -73,10 +71,3 @@ cacheSolve <- function(x, ...)
      inv_matrix
 }
 
-x = matrix(c(rnorm(3,4),rnorm(3,10)), 2,2)
-x
-
-cacheSolve(makeCacheMatrix(x))
-y = matrix(c(rnorm(3,4),rnorm(3,10)), 2,2)
-y
-cacheSolve(makeCacheMatrix(y))
